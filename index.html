@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+
+    
+    <div id="app">
+        <!-- <h1>{{message}}</h1>
+        <a :href="url">Facebook Link</a>
+
+        <form action="">
+            <input v-model="message" type="text">
+        </form>
+    
+        <div>
+            {{message}}
+        </div> -->
+
+        <h1 @click="number++">{{number}}</h1>
+        <form action="" @submit.prevent="number--">
+            <input type="submit" value="submit" name="submit">
+        </form>
+    </div>
+
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    // message: 'Hello Vue!',
+    // url: 'https://facebook.com/'
+    number:10
+  }
+})
+
+</script>
+</body>
+</html>
